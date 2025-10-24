@@ -13,7 +13,7 @@ RE-Novate is an interactive entrepreneurial skills development platform designed
 
 ## 🚀 Live Demo
 
-**Production App:** [https://re-novate.vercel.app](https://re-novate.vercel.app)
+**Production App:** [https://capstone-solution-c30f.onrender.com](https://capstone-solution-c30f.onrender.com)
 
 ### Test Credentials
 

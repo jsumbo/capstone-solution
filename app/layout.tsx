@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://re-novate.vercel.app'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://capstone-solution-c30f.onrender.com/'),
   alternates: {
     canonical: '/',
   },
@@ -62,7 +62,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'RE-Novate - Entrepreneurial Skills Platform',
     description: 'Interactive entrepreneurial skills development platform for high school students. Learn business fundamentals through AI-powered simulations.',
-    images: ['/twitter-image.png'],
+
+  images: ['/og-image.png'],
     creator: '@renovate_edu',
     site: '@renovate_edu',
   },
@@ -95,6 +96,8 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        {/* Preload hero background image to reduce perceived load time */}
+        <link rel="preload" as="image" href="/referrals-landing.jpg" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
