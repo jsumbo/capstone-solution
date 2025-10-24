@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Allow: /login
+Allow: /onboarding
+Allow: /simulation
+
+# Disallow private/authenticated pages
+Disallow: /dashboard
+Disallow: /teacher/
+Disallow: /api/
+Disallow: /admin/
+
+# Disallow temporary or development files
+Disallow: /_next/
+Disallow: /static/
+
+Sitemap: https://re-novate.vercel.app/sitemap.xml
